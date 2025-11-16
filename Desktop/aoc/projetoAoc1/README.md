@@ -61,7 +61,7 @@ add.s $f2, $f0, $f1
 mul.s $f3, $f0, $f1
 
 
-# 📦 Instruções em Bytes
+📦 Instruções em Bytes
 
 x"20",x"11",x"00",x"06"
 x"20",x"12",x"00",x"04"
