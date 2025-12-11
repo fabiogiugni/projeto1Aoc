@@ -73,3 +73,22 @@ x"22",x"10",x"00",x"01"
 x"08",x"00",x"00",x"04"
 x"46",x"01",x"00",x"80"
 x"46",x"01",x"00",x"C2"
+
+✍️ Estado final dos registradores (Parte que é importante para análise para análise)
+
+(...)
+
+O estado final dos registradores confirma o êxito das operações testadas.
+
+testbench.vhd:137:9:@1035ns:(report note): === ESTADO FINAL DOS REGISTRADORES (via probe inteiro) ===
+testbench.vhd:141:13:@1052ns:(report note): R16 = 0x00000006    $s0     (6)dec
+testbench.vhd:141:13:@1053ns:(report note): R17 = 0x00000006    $s1     (6)dec
+testbench.vhd:141:13:@1054ns:(report note): R18 = 0x00000004    $s2     (4)dec
+testbench.vhd:141:13:@1055ns:(report note): R19 = 0x00000018    $s3     (24)dec   ($s1 * $s2)
+testbench.vhd:145:9:@1067ns:(report note): === ESTADO FINAL DOS REGISTRADORES DE PONTO FLUTUANTE (via FP probe) ===
+testbench.vhd:149:13:@1068ns:(report note): F0 = 0x451C4000     $f0     (+2500.0)dec 
+testbench.vhd:149:13:@1069ns:(report note): F1 = 0xC4DAC000     $f1     (-1750.0)dec
+testbench.vhd:149:13:@1070ns:(report note): F2 = 0x443B8000     $f2     (+749.0)dec   ($f0 + $f1)
+testbench.vhd:149:13:@1071ns:(report note): F3 = 0xCA8583B0     $f3     (-4 283 520.0)dec   ($f0 * $f1)
+
+Link para projeto no EDAPlayground: https://edaplayground.com/x/uiYJ
